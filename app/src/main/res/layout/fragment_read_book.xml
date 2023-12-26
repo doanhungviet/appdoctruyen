@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ReadBook.ReadBook"
+    android:background="#F5F5F5">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_readbook"
+        android:background="@color/orange"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_new_24"
+        app:title="Đọc truyện"
+        app:titleTextColor="@color/white"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_readbook"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="3dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

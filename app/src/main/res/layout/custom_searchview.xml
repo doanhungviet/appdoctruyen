@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search_bg">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+
+            app:queryBackground="@android:color/transparent"
+            android:id="@+id/searchViewCustom"
+            android:layout_toLeftOf="@+id/tv_search_toolbar"
+            android:queryHint="Tìm kiếm truyện tranh hay" />
+        <TextView
+            android:id="@+id/tv_search_toolbar"
+            android:text="Tìm kiếm"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@drawable/search_pressed"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>
